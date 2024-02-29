@@ -1,0 +1,17 @@
+{
+  "name": "wizeprompt-session-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -rf dist && ncc build index.js -o dist",
+    "build": "rm -rf function.zip && zip function.zip -j ./dist/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}
